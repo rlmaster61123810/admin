@@ -23,6 +23,12 @@ public class Employee {
     @Column(name="email")
     private String email;
 
+    @Column(name="age")
+    private String age;
+
+    @Column(name="image")
+    private byte[] image;
+
     public long getId() {
         return id;
     }
@@ -54,6 +60,23 @@ public class Employee {
     public void setEmail(String email) {
         this.email = email;
     }
-    
+
+    public String getAge() {
+        return email;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+    public byte[] getimage() {
+        return image;
+    }
+
+    public void setimage(byte[] image) {
+        System.out.println(image);
+        this.image = image;
+        System.out.println(this.image);
+    }
+
     
 }
